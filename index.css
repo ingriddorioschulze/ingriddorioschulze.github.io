@@ -73,6 +73,11 @@ body,
   background: white;
 }
 
+.btn-links:hover {
+  background: yellow;
+  border: dashed black 2px;
+}
+
 footer {
   display: flex;
   align-items: center;
@@ -117,7 +122,6 @@ footer {
   border: 4px solid black;
   width: 100%;
   padding: 40px;
-  overflow: scroll;
 }
 
 .sketchnotes-container {
@@ -206,4 +210,16 @@ footer {
   line-height: 30px;
   color: white;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
