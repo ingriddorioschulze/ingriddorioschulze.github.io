@@ -60,14 +60,14 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
+  width: 135px;
   height: 40px;
   padding: 20px;
   margin: 20px;
   text-align: center;
   text-decoration: none;
   border: 2px solid black;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 2px;
   color: black;
   background: white;
@@ -165,14 +165,6 @@ footer {
   cursor: pointer;
 }
 
-/* .fa-arrow-left {
-  font-size: 30px;
-  width: 60px;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-} */
-
 .title {
   font-size: 30px;
   padding: 40px;
@@ -185,12 +177,6 @@ footer {
   padding: 40px;
   color: white;
   letter-spacing: 2px;
+  line-height: 30px;
+  text-align: center;
 }
-
-/* colors
-
-#ed3b3b = red;
-#ef738b = pink;
-#cc2a7d = second pink;
-#fadac1 = white;
-#2e2250 = purple; */
