@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+
 import {
   BrowserRouter as Router,
   NavLink,
@@ -7,41 +8,53 @@ import {
   Route,
 } from 'react-router-dom'
 
-import About from './components/About'
-import Contact from './components/Contact'
-import Home from './components/Home'
-import Projects from './components/Projects'
+import About from '../pages/About'
+import Contact from '../pages/Contact'
+import Home from '../pages/Home'
+import Projects from '../pages/Projects'
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+`
 
-  .header {
+const StyledHeader = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 50px;
+
+  @media (max-width: ${({ theme: { breakpoints } }) => breakpoints.mb}) {
     display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    padding: 50px;
+    flex-direction: column;
   }
 `
+
 const StyledLink = styled(NavLink)`
-  font-family: 'Sunflower';
+  font-family: 'Paytone One';
   font-size: 25px;
   color: black;
   text-decoration: none;
+  padding: 10px;
+  color: ${({ theme }) => theme.colors.desertStorm};
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.mineShaft};
+    color: ${({ theme }) => theme.colors.webOrange};
+  }
 `
 
-function App() {
+function Header() {
   return (
     <Container>
       <Router>
-        <div className="header">
+        <StyledHeader>
           <StyledLink to="/">home</StyledLink>
           <StyledLink to="/about">about</StyledLink>
           <StyledLink to="/projects">projects</StyledLink>
           <StyledLink to="/contact">contact</StyledLink>
-        </div>
+        </StyledHeader>
         <Switch>
           <Route exact path="/" component={Home}></Route>
           <Route path="/about" component={About}></Route>
@@ -52,4 +65,5 @@ function App() {
     </Container>
   )
 }
-export default App
+
+export default Header
