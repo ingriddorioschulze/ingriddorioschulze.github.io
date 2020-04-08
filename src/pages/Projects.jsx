@@ -6,19 +6,23 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 25px;
 
   .title {
-    font-family: 'Paytone One';
-    font-size: 40px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 35px;
     padding: 40px;
-    color: ${({ theme }) => theme.colors.webOrange};
+    color: ${({ theme }) => theme.colors.desertStorm};
   }
 
   .text {
     font-family: 'Montserrat';
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 18px;
     text-align: center;
-    padding: 20px 45px 20px 45px;
+    padding: 40px 200px 20px 200px;
+    color: ${({ theme }) => theme.colors.mineShaft};
   }
 
   .card-container {
@@ -28,15 +32,30 @@ const Container = styled.div`
     padding: 20px;
   }
 
+  .project-link {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: #323232;
+    cursor: pointer;
+  }
+
   .card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 180px;
-    background: #ececeb;
+    height: 160px;
+    background: #ffa501;
     padding: 25px;
     margin: 25px;
     border: solid 4px #323232;
+    :hover {
+      border: solid 5px #323232;
+    }
   }
 
   .img {
@@ -49,8 +68,14 @@ const Container = styled.div`
   }
 
   .name {
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 16px;
     margin: 10px;
     text-align: center;
   }
@@ -61,18 +86,53 @@ function Projects() {
     <Container>
       <div className="title">PROJECTS</div>
       <div className="card-container">
-        <div className="card">
-          <div className="name">survivor</div>
-        </div>
-        <div className="card">
-          <div className="name">futurama</div>
-        </div>
-        <div className="card">
-          <div className="name">popcornlovers</div>
-        </div>
-        <div className="card">
-          <div className="name">retrato</div>
-        </div>
+        <a
+          class="project-link"
+          href="https://github.com/ingriddorioschulze/survivor"
+        >
+          <div className="card">
+            <div className="name">Survivor</div>
+            <div className="description">
+              App to remember users to water their plants
+            </div>
+          </div>
+        </a>
+
+        <a
+          class="project-link"
+          href="https://github.com/ingriddorioschulze/retrato"
+        >
+          <div className="card">
+            <div className="name">Retrato</div>
+            <div className="description">
+              App bla bla bla bla bla bla bla bla
+            </div>
+          </div>
+        </a>
+
+        <a
+          class="project-link"
+          href="https://github.com/ingriddorioschulze/futurama-quotes"
+        >
+          <div className="card">
+            <div className="name">Futurama Quotes</div>
+            <div className="description">
+              App bla bla bla bla bla bla bla bla
+            </div>
+          </div>
+        </a>
+
+        <a
+          class="project-link"
+          href="https://github.com/ingriddorioschulze/popforpopcornlovers"
+        >
+          <div className="card">
+            <div className="name">POP for Popcorn Lovers</div>
+            <div className="description">
+              App bla bla bla bla bla bla bla bla
+            </div>
+          </div>
+        </a>
       </div>
     </Container>
   )

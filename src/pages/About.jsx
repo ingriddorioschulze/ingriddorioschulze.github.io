@@ -7,31 +7,37 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 25px;
 
   .title {
-    font-family: 'Paytone One';
-    font-size: 40px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 35px;
     padding: 40px;
-    color: ${({ theme }) => theme.colors.webOrange};
+    color: ${({ theme }) => theme.colors.desertStorm};
   }
 
   .text {
+    width: 600px;
     font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 18px;
     text-align: center;
     padding: 40px 200px 20px 200px;
-    color: ${({ theme }) => theme.colors.webOrange};
+    color: ${({ theme }) => theme.colors.desertStorm};
   }
 
   .me {
     width: 200px;
     height: 200px;
     border-radius: 120px;
-    border: 4px dotted #323232;
+    border: 4px dotted #ececeb;
     object-fit: cover;
     object-position: center;
     padding: 10px;
+    :hover {
+      border: 4px dotted #323232;
+    }
   }
 `
 //#endregion

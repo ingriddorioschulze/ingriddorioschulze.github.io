@@ -2,7 +2,6 @@ const theme = {
   colors: {
     mineShaft: '#323232',
     radicalRed: '#FF1E56',
-    pumpkin: '#FF7315',
     desertStorm: '#ECECEB',
     webOrange: '#FFA501',
   },
