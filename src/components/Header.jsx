@@ -19,41 +19,57 @@ const Container = styled.div`
   justify-content: center;
   align-content: center;
 `
-
 const StyledHeader = styled.div`
   display: flex;
-  justify-content: space-evenly;
-  align-content: center;
-  padding: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
 
   @media (max-width: ${({ theme: { breakpoints } }) => breakpoints.mb}) {
     display: flex;
     flex-direction: column;
   }
 `
+const Logo = styled.img`
+  width: 20%;
+`
+const Links = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+`
 
 const StyledLink = styled(NavLink)`
-  font-family: 'Paytone One';
-  font-size: 25px;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 600;
   color: black;
   text-decoration: none;
   padding: 10px;
-  color: ${({ theme }) => theme.colors.desertStorm};
+  color: ${({ theme }) => theme.colors.liquorice};
   &:hover {
-    background-color: ${({ theme }) => theme.colors.mineShaft};
     color: ${({ theme }) => theme.colors.webOrange};
   }
 `
 
-function Header() {
+function Header(theme) {
   return (
     <Container>
       <Router>
         <StyledHeader>
-          <StyledLink to="/">home</StyledLink>
-          <StyledLink to="/about">about</StyledLink>
-          <StyledLink to="/projects">projects</StyledLink>
-          <StyledLink to="/contact">contact</StyledLink>
+          <Logo alt="logo" src="logo.png" />
+          <Links>
+            <StyledLink to="/">home</StyledLink>
+            <StyledLink activeStyle={{ color: '#FFA501' }} to="/about">
+              about
+            </StyledLink>
+            <StyledLink activeStyle={{ color: '#FFA501' }} to="/projects">
+              projects
+            </StyledLink>
+            <StyledLink activeStyle={{ color: '#FFA501' }} to="/contact">
+              contact
+            </StyledLink>
+          </Links>
         </StyledHeader>
         <Switch>
           <Route exact path="/" component={Home}></Route>

@@ -14,7 +14,7 @@ const Container = styled.div`
     font-weight: 700;
     font-size: 35px;
     padding: 40px;
-    color: ${({ theme }) => theme.colors.desertStorm};
+    color: ${({ theme }) => theme.colors.liquorice};
   }
 
   .text {
@@ -24,7 +24,7 @@ const Container = styled.div`
     font-size: 18px;
     text-align: center;
     padding: 40px 200px 20px 200px;
-    color: ${({ theme }) => theme.colors.desertStorm};
+    color: ${({ theme }) => theme.colors.liquorice};
   }
 
   .me {

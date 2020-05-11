@@ -8,29 +8,25 @@ const Container = styled.div`
   align-items: center;
   padding-top: 25px;
 
-  .title {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 35px;
-    padding: 40px;
-    color: ${({ theme }) => theme.colors.desertStorm};
-  }
-
   .text {
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 18px;
     text-align: center;
-    padding: 40px 200px 20px 200px;
-    color: ${({ theme }) => theme.colors.desertStorm};
+    color: ${({ theme }) => theme.colors.licorice};
   }
 `
 
 function Contact() {
   return (
     <Container>
-      <div className="title">CONTACT</div>
-      <div className="text"></div>
+      <div className="text">In case you want:</div>
+      <div className="text">
+        1. to say "Hey, what is going on?", 2. to give me plants, 3. to make a
+        project together,
+      </div>
+      <div className="text">you are in the correct place!</div>
+      <div>icones</div>
     </Container>
   )
 }

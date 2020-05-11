@@ -4,6 +4,7 @@ const theme = {
     radicalRed: '#FF1E56',
     desertStorm: '#ECECEB',
     webOrange: '#FFA501',
+    liquorice: '#1a1110',
   },
 
   breakpoints: {

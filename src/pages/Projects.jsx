@@ -89,6 +89,8 @@ function Projects() {
         <a
           class="project-link"
           href="https://github.com/ingriddorioschulze/survivor"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <div className="card">
             <div className="name">Survivor</div>
@@ -101,6 +103,8 @@ function Projects() {
         <a
           class="project-link"
           href="https://github.com/ingriddorioschulze/retrato"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <div className="card">
             <div className="name">Retrato</div>
@@ -113,6 +117,8 @@ function Projects() {
         <a
           class="project-link"
           href="https://github.com/ingriddorioschulze/futurama-quotes"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <div className="card">
             <div className="name">Futurama Quotes</div>
@@ -125,6 +131,8 @@ function Projects() {
         <a
           class="project-link"
           href="https://github.com/ingriddorioschulze/popforpopcornlovers"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <div className="card">
             <div className="name">POP for Popcorn Lovers</div>
