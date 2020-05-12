@@ -8,7 +8,6 @@ import {
   Route,
 } from 'react-router-dom'
 
-import About from '../pages/About'
 import Contact from '../pages/Contact'
 import Home from '../pages/Home'
 import Projects from '../pages/Projects'
@@ -57,13 +56,12 @@ function Header(theme) {
     <Container>
       <Router>
         <StyledHeader>
-          <Logo alt="logo" src="logo.png" />
+          <StyledLink to="/">
+            <Logo alt="logo" src="logo.png" />
+          </StyledLink>
           <Links>
             <StyledLink activeStyle={{ color: '#ECECEB' }} to="/">
               home
-            </StyledLink>
-            <StyledLink activeStyle={{ color: '#FFA501' }} to="/about">
-              about
             </StyledLink>
             <StyledLink activeStyle={{ color: '#FFA501' }} to="/projects">
               projects
@@ -75,7 +73,6 @@ function Header(theme) {
         </StyledHeader>
         <Switch>
           <Route exact path="/" component={Home}></Route>
-          <Route path="/about" component={About}></Route>
           <Route path="/projects" component={Projects}></Route>
           <Route path="/contact" component={Contact}></Route>
         </Switch>
