@@ -45,7 +45,6 @@ const Container = styled.div`
 function About() {
   return (
     <Container>
-      <div className="title">ABOUT</div>
       <img className="me" alt="Ingrid" src="me.jpg" />
       <div className="text">
         While working in Content Management in Brazil and Germany, I develop a

@@ -59,7 +59,9 @@ function Header(theme) {
         <StyledHeader>
           <Logo alt="logo" src="logo.png" />
           <Links>
-            <StyledLink to="/">home</StyledLink>
+            <StyledLink activeStyle={{ color: '#ECECEB' }} to="/">
+              home
+            </StyledLink>
             <StyledLink activeStyle={{ color: '#FFA501' }} to="/about">
               about
             </StyledLink>

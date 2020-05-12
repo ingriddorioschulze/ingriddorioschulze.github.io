@@ -44,7 +44,7 @@ function Home() {
   return (
     <Container>
       <div className="name">Ing.rid</div>
-      <div className="subtitle">a feminin name, from Old Norse: Ingvi</div>
+      <div className="subtitle">a name, from Old Norse: Ingvi</div>
       <div className="description">
         1. Paulista based in Berlin; 2. Frontend Engineer;
       </div>

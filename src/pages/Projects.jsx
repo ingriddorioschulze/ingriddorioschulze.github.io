@@ -84,7 +84,6 @@ const Container = styled.div`
 function Projects() {
   return (
     <Container>
-      <div className="title">PROJECTS</div>
       <div className="card-container">
         <a
           class="project-link"
