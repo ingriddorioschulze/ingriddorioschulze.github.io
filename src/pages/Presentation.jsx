@@ -3,49 +3,50 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   display: flex;
-  padding-top: 100px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 `
-const PictureContainer = styled.div``
 const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 
   .name {
-    width: 600px;
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 60px;
     padding: 10px;
-    color: ${({ theme }) => theme.colors.liquorice};
+    color: #1a1110;
+    text-align: center;
   }
 
   .subtitle {
-    width: 600px;
     padding: 20px;
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 15px;
-    color: ${({ theme }) => theme.colors.liquorice};
+    color: #1a1110;
     line-height: 30px;
+    text-align: center;
   }
 
   .description {
-    width: 600px;
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 15px;
-    color: ${({ theme }) => theme.colors.liquorice};
+    color: #1a1110;
     line-height: 30px;
+    text-align: center;
   }
 `
 
-function Home() {
+function Presentation() {
   return (
     <Container>
-      <PictureContainer></PictureContainer>
       <ContentContainer>
-        <div className="name">Ing.rid</div>
+        <div className="name">Ing·rid</div>
         <div className="subtitle">a name, from Old Norse: Ingvi</div>
         <div className="description">
           1. Paulista based in Berlin; 2. Frontend Engineer;
@@ -61,4 +62,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Presentation

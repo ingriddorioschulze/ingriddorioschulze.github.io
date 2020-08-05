@@ -9,7 +9,6 @@ import {
 } from 'react-router-dom'
 
 import Contact from '../pages/Contact'
-import Home from '../pages/Home'
 import Projects from '../pages/Projects'
 
 const Container = styled.div`
@@ -23,14 +22,9 @@ const StyledHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 30px;
-
-  @media (max-width: ${({ theme: { breakpoints } }) => breakpoints.mb}) {
-    display: flex;
-    flex-direction: column;
-  }
 `
 const Logo = styled.img`
-  width: 20%;
+  width: 100px;
 `
 const Links = styled.div`
   display: flex;
@@ -45,13 +39,13 @@ const StyledLink = styled(NavLink)`
   color: black;
   text-decoration: none;
   padding: 10px;
-  color: ${({ theme }) => theme.colors.liquorice};
+  color: #1a1110;
   &:hover {
-    color: ${({ theme }) => theme.colors.webOrange};
+    color: #ffa501;
   }
 `
 
-function Header(theme) {
+function Header() {
   return (
     <Container>
       <Router>
@@ -72,7 +66,6 @@ function Header(theme) {
           </Links>
         </StyledHeader>
         <Switch>
-          <Route exact path="/" component={Home}></Route>
           <Route path="/projects" component={Projects}></Route>
           <Route path="/contact" component={Contact}></Route>
         </Switch>

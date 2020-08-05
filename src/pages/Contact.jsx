@@ -6,14 +6,22 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  min-height: 100vh;
+
+  .title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 35px;
+    padding: 40px;
+    color: #323232;
+  }
 
   .text {
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 16px;
     text-align: center;
-    color: ${({ theme }) => theme.colors.licorice};
+    color: #1a1110;
     margin: 5px;
   }
   .text1 {
@@ -21,7 +29,7 @@ const Container = styled.div`
     font-weight: 500;
     font-size: 20px;
     text-align: center;
-    color: ${({ theme }) => theme.colors.licorice};
+    color: #1a1110;
     padding: 20px;
   }
 
@@ -42,7 +50,7 @@ const Container = styled.div`
     text-decoration: none;
     color: black;
     &:hover {
-      color: ${({ theme }) => theme.colors.webOrange};
+      color: #ffa501;
     }
   }
 `
@@ -50,6 +58,7 @@ const Container = styled.div`
 function Contact() {
   return (
     <Container>
+      <div className="title">Contact</div>
       <div className="text1">In case you want:</div>
       <div className="text">1. to say "Hey, what is going on?",</div>
       <div className="text">2. to give me plants,</div>

@@ -6,14 +6,14 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 25px;
+  min-height: 100vh;
 
   .title {
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 35px;
     padding: 40px;
-    color: ${({ theme }) => theme.colors.desertStorm};
+    color: #323232;
   }
 
   .text {
@@ -22,7 +22,7 @@ const Container = styled.div`
     font-size: 18px;
     text-align: center;
     padding: 40px 200px 20px 200px;
-    color: ${({ theme }) => theme.colors.mineShaft};
+    color: #323232;
   }
 
   .card-container {
@@ -84,9 +84,10 @@ const Container = styled.div`
 function Projects() {
   return (
     <Container>
+      <div className="title">Projects</div>
       <div className="card-container">
         <a
-          class="project-link"
+          className="project-link"
           href="https://github.com/ingriddorioschulze/survivor"
           target="_blank"
           rel="noopener noreferrer"
@@ -100,7 +101,7 @@ function Projects() {
         </a>
 
         <a
-          class="project-link"
+          className="project-link"
           href="https://github.com/ingriddorioschulze/retrato"
           target="_blank"
           rel="noopener noreferrer"
@@ -114,7 +115,7 @@ function Projects() {
         </a>
 
         <a
-          class="project-link"
+          className="project-link"
           href="https://github.com/ingriddorioschulze/futurama-quotes"
           target="_blank"
           rel="noopener noreferrer"
@@ -128,7 +129,7 @@ function Projects() {
         </a>
 
         <a
-          class="project-link"
+          className="project-link"
           href="https://github.com/ingriddorioschulze/popforpopcornlovers"
           target="_blank"
           rel="noopener noreferrer"
