@@ -54,13 +54,13 @@ function Header() {
             <Logo alt="logo" src="logo.png" />
           </StyledLink>
           <Links>
-            <StyledLink activeStyle={{ color: '#ECECEB' }} to="/">
+            <StyledLink activeStyle={{ color: '#ECECEB' }} to="#home">
               home
             </StyledLink>
-            <StyledLink activeStyle={{ color: '#FFA501' }} to="/projects">
+            <StyledLink activeStyle={{ color: '#FFA501' }} to="#projects">
               projects
             </StyledLink>
-            <StyledLink activeStyle={{ color: '#FFA501' }} to="/contact">
+            <StyledLink activeStyle={{ color: '#FFA501' }} to="#contact">
               contact
             </StyledLink>
           </Links>

@@ -13,12 +13,17 @@ const ContentContainer = styled.div`
   align-items: center;
   text-align: center;
 
+  #home {
+    position: absolute;
+    top: 0;
+  }
+
   .name {
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 60px;
     padding: 10px;
-    color: #1a1110;
+    color: #313638;
     text-align: center;
   }
 
@@ -27,7 +32,7 @@ const ContentContainer = styled.div`
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 15px;
-    color: #1a1110;
+    color: #313638;
     line-height: 30px;
     text-align: center;
   }
@@ -36,7 +41,7 @@ const ContentContainer = styled.div`
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 15px;
-    color: #1a1110;
+    color: #313638;
     line-height: 30px;
     text-align: center;
   }
@@ -46,6 +51,7 @@ function Presentation() {
   return (
     <Container>
       <ContentContainer>
+        <span id="home" />
         <div className="name">Ing·rid</div>
         <div className="subtitle">a name, from Old Norse: Ingvi</div>
         <div className="description">

@@ -13,7 +13,7 @@ const Container = styled.div`
     font-weight: 700;
     font-size: 35px;
     padding: 40px;
-    color: #323232;
+    color: #313638;
   }
 
   .text {
@@ -21,7 +21,7 @@ const Container = styled.div`
     font-weight: 400;
     font-size: 16px;
     text-align: center;
-    color: #1a1110;
+    color: #313638;
     margin: 5px;
   }
   .text1 {
@@ -29,7 +29,7 @@ const Container = styled.div`
     font-weight: 500;
     font-size: 20px;
     text-align: center;
-    color: #1a1110;
+    color: #313638;
     padding: 20px;
   }
 
@@ -50,7 +50,7 @@ const Container = styled.div`
     text-decoration: none;
     color: black;
     &:hover {
-      color: #ffa501;
+      color: #e4b363;
     }
   }
 `
@@ -58,6 +58,7 @@ const Container = styled.div`
 function Contact() {
   return (
     <Container>
+      <span id="contact" />
       <div className="title">Contact</div>
       <div className="text1">In case you want:</div>
       <div className="text">1. to say "Hey, what is going on?",</div>
