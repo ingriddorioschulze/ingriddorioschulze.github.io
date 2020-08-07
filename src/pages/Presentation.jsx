@@ -13,11 +13,6 @@ const ContentContainer = styled.div`
   align-items: center;
   text-align: center;
 
-  #home {
-    position: absolute;
-    top: 0;
-  }
-
   .name {
     font-family: 'Montserrat';
     font-weight: 500;
@@ -51,7 +46,6 @@ function Presentation() {
   return (
     <Container>
       <ContentContainer>
-        <span id="home" />
         <div className="name">Ing·rid</div>
         <div className="subtitle">a name, from Old Norse: Ingvi</div>
         <div className="description">

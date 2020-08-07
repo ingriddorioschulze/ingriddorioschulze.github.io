@@ -58,7 +58,6 @@ const Container = styled.div`
 function Contact() {
   return (
     <Container>
-      <span id="contact" />
       <div className="title">Contact</div>
       <div className="text1">In case you want:</div>
       <div className="text">1. to say "Hey, what is going on?",</div>

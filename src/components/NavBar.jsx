@@ -21,7 +21,7 @@ const Container = styled.div`
 function Navbar() {
   return (
     <Container>
-      <img src="/logo1.png" alt="logo" />
+      <img src="/logo.png" alt="logo" />
     </Container>
   )
 }
