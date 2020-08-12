@@ -10,26 +10,26 @@ const Container = styled.div`
 
   .title {
     font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 35px;
+    font-weight: ${({ theme }) => theme.font.weight.bold};
+    font-size: ${({ theme }) => theme.font.size.xl};
     padding: 40px;
-    color: #313638;
+    color: ${({ theme }) => theme.colors.onyx};
   }
 
   .text {
     font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: ${({ theme }) => theme.font.weight.normal};
+    font-size: ${({ theme }) => theme.font.size.xs};
     text-align: center;
-    color: #313638;
+    color: ${({ theme }) => theme.colors.onyx};
     margin: 5px;
   }
   .text1 {
     font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: ${({ theme }) => theme.font.weight.semiBold};
+    font-size: ${({ theme }) => theme.font.size.xs};
     text-align: center;
-    color: #313638;
+    color: ${({ theme }) => theme.colors.onyx};
     padding: 20px;
   }
 
@@ -48,9 +48,13 @@ const Container = styled.div`
     width: 60px;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: #313638;
     &:hover {
       color: #e4b363;
+    }
+    @media (max-width: ${({ theme }) => theme.breakpoints.mb}) {
+      width: 30px;
+      padding: 15px;
     }
   }
 `
@@ -73,7 +77,7 @@ function Contact() {
           <i className="fa fa-envelope"></i>
         </a>
         <a
-          href="https://twitter.com/a_do_rio"
+          href="https://twitter.com/dorioschulze"
           target="_blank"
           rel="noopener noreferrer"
         >

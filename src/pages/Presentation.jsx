@@ -15,30 +15,31 @@ const ContentContainer = styled.div`
 
   .name {
     font-family: 'Montserrat';
-    font-weight: 500;
+    font-weight: ${({ theme }) => theme.font.weight.medium};
     font-size: 60px;
     padding: 10px;
-    color: #313638;
+    color: ${({ theme }) => theme.colors.onyx};
     text-align: center;
   }
 
   .subtitle {
-    padding: 20px;
+    padding: 10px;
     font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 15px;
-    color: #313638;
+    font-weight: ${({ theme }) => theme.font.weight.normal};
+    font-size: ${({ theme }) => theme.font.size.xs};
+    color: ${({ theme }) => theme.colors.onyx};
     line-height: 30px;
     text-align: center;
   }
 
   .description {
     font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 15px;
-    color: #313638;
+    font-weight: ${({ theme }) => theme.font.weight.normal};
+    font-size: ${({ theme }) => theme.font.size.xxs};
+    color: ${({ theme }) => theme.colors.onyx};
     line-height: 30px;
     text-align: center;
+    width: 340px;
   }
 `
 
@@ -47,15 +48,12 @@ function Presentation() {
     <Container>
       <ContentContainer>
         <div className="name">Ing·rid</div>
+        <div className="subtitle">[ˈɪŋɡrit]</div>
         <div className="subtitle">a name, from Old Norse: Ingvi</div>
         <div className="description">
-          1. Paulista based in Berlin; 2. Frontend Engineer;
-        </div>
-        <div className="description">
-          3. Can be called a Graphic Designer; 4. Brings people together;
-        </div>
-        <div className="description">
-          5. Photogenic; 6. Mother of plants; 7. Popcorn lover; 8. Craftswoman.
+          1. Paulista based in Berlin; 2. Frontend Engineer; 3. Can be called a
+          Graphic Designer; 4. Brings people together; 5. Photogenic; 6. Mother
+          of plants; 7. Popcorn lover; 8. Craftswoman.
         </div>
       </ContentContainer>
     </Container>

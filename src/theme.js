@@ -1,30 +1,35 @@
 const theme = {
   colors: {
-    mineShaft: '#323232',
-    radicalRed: '#FF1E56',
-    desertStorm: '#ECECEB',
-    webOrange: '#FFA501',
-    liquorice: '#1a1110',
+    fireOpal: '#ef6461',
+    sunray: '#e4b363',
+    alabaster: '#e0dfd5',
+    onyx: '#313638',
   },
 
   breakpoints: {
-    llg: '1920px',
-    lg: '1200px',
-    md: '1023px',
-    sm: '768px',
     mb: '420px',
-    landscapeMb: '825px',
   },
 
   font: {
-    default: 'normal normal normal Montserrat ',
+    default: 'normal normal normal Montserrat',
     family: ' Montserrat, Calibri, Arial,',
 
     size: {
+      xl: '35px',
       l: '28px',
-      m: '21px',
+      m: '20px',
       s: '18px',
-      xs: '14px',
+      xs: '16px',
+      xxs: '14px',
+    },
+
+    weight: {
+      light: '300',
+      normal: '400',
+      medium: '500',
+      semiBold: '600',
+      bold: '700',
+      extraBold: '800',
     },
   },
 }

@@ -5,7 +5,8 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #E0DFD5;
+    background-color: ${({ theme }) => theme.colors.alabaster};
+
   }
 `
 export default GlobalStyles

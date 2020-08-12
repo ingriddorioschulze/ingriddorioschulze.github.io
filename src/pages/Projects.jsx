@@ -10,10 +10,10 @@ const Container = styled.div`
 
   .title {
     font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 35px;
+    font-weight: ${({ theme }) => theme.font.weight.bold};
+    font-size: ${({ theme }) => theme.font.size.xl};
     padding: 40px;
-    color: #313638;
+    color: ${({ theme }) => theme.colors.onyx};
   }
 `
 const CardContainer = styled.div`
@@ -21,16 +21,26 @@ const CardContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
+
+  a {
+    font-family: 'Montserrat';
+    font-weight: ${({ theme }) => theme.font.weight.normal};
+    text-align: center;
+    text-decoration: none;
+    font-size: ${({ theme }) => theme.font.size.xs};
+    color: ${({ theme }) => theme.colors.onyx};
+    cursor: pointer;
+  }
 `
 const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   flex: 1 1 20vw;
-  height: 550px;
-  max-width: 380px;
+  height: 600px;
+  max-width: 370px;
   padding: 30px;
-  background: #e4b363;
+  background: ${({ theme }) => theme.colors.sunray};
   padding: 25px;
   margin: 25px;
   border-radius: 4px;
@@ -44,31 +54,21 @@ const Card = styled.div`
     object-fit: cover;
     object-position: center;
     cursor: pointer;
-    max-height: 460px;
     padding: 20px;
   }
 
   .name {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: ${({ theme }) => theme.font.weight.bold};
     padding: 20px;
     text-align: center;
   }
 
   .description {
-    font-size: 16px;
+    font-size: ${({ theme }) => theme.font.size.xs};
     padding: 10px;
     text-align: center;
   }
-`
-const Link = styled.div`
-  font-family: 'Montserrat';
-  font-weight: 400;
-  text-align: center;
-  text-decoration: none;
-  font-size: 15px;
-  color: #313638;
-  cursor: pointer;
 `
 
 function Projects() {
@@ -76,7 +76,7 @@ function Projects() {
     <Container>
       <div className="title">Projects</div>
       <CardContainer>
-        <Link
+        <a
           className="project-link"
           href="https://github.com/ingriddorioschulze/survivor"
           target="_blank"
@@ -96,9 +96,9 @@ function Projects() {
               PostgreSQL
             </div>
           </Card>
-        </Link>
+        </a>
 
-        <Link
+        <a
           className="project-link"
           href="https://github.com/ingriddorioschulze/retrato"
           target="_blank"
@@ -117,9 +117,9 @@ function Projects() {
               PostgreSQL, Vue.js, AWS S3
             </div>
           </Card>
-        </Link>
+        </a>
 
-        <Link
+        <a
           className="project-link"
           href="https://github.com/ingriddorioschulze/popforpopcornlovers"
           target="_blank"
@@ -132,18 +132,18 @@ function Projects() {
             />
             <div className="name">POP for Popcorn Lovers</div>
             <div className="description">
-              Social network made in React for people who love popcorn. The
-              single-page website enable users to add a profile, picture, see
-              online friends, chat, make posts and manage friend requests.
+              Social network for people who love popcorn. The single-page
+              website enable users to add a profile, picture, see online
+              friends, chat, make posts and manage friend requests.
             </div>
             <div className="description">
               Technologies: Javascript, React, Redux, Express.js, AWS, Node.js,
               PostgreSQL, Socket.IO
             </div>
           </Card>
-        </Link>
+        </a>
 
-        <Link
+        <a
           className="project-link"
           href="https://github.com/ingriddorioschulze/futurama-quotes"
           target="_blank"
@@ -161,7 +161,7 @@ function Projects() {
               Technologies: Javascript, React, Redux
             </div>
           </Card>
-        </Link>
+        </a>
       </CardContainer>
     </Container>
   )
