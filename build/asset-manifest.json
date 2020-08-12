@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/static/js/main.ef880edc.chunk.js",
-    "main.js.map": "/static/js/main.ef880edc.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.f96f3bec.js",
-    "runtime-main.js.map": "/static/js/runtime-main.f96f3bec.js.map",
-    "static/js/2.43f9556c.chunk.js": "/static/js/2.43f9556c.chunk.js",
-    "static/js/2.43f9556c.chunk.js.map": "/static/js/2.43f9556c.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.184a2c02f65580f6bf68909823796999.js": "/precache-manifest.184a2c02f65580f6bf68909823796999.js",
-    "service-worker.js": "/service-worker.js",
-    "static/js/2.43f9556c.chunk.js.LICENSE.txt": "/static/js/2.43f9556c.chunk.js.LICENSE.txt"
+    "main.js": "/ingriddorioschulze.github.io/static/js/main.3afc4cbd.chunk.js",
+    "main.js.map": "/ingriddorioschulze.github.io/static/js/main.3afc4cbd.chunk.js.map",
+    "runtime-main.js": "/ingriddorioschulze.github.io/static/js/runtime-main.53c6a09b.js",
+    "runtime-main.js.map": "/ingriddorioschulze.github.io/static/js/runtime-main.53c6a09b.js.map",
+    "static/js/2.d877e9bb.chunk.js": "/ingriddorioschulze.github.io/static/js/2.d877e9bb.chunk.js",
+    "static/js/2.d877e9bb.chunk.js.map": "/ingriddorioschulze.github.io/static/js/2.d877e9bb.chunk.js.map",
+    "index.html": "/ingriddorioschulze.github.io/index.html",
+    "precache-manifest.1bc0715acd2c057961d3efad0edd8894.js": "/ingriddorioschulze.github.io/precache-manifest.1bc0715acd2c057961d3efad0edd8894.js",
+    "service-worker.js": "/ingriddorioschulze.github.io/service-worker.js",
+    "static/js/2.d877e9bb.chunk.js.LICENSE.txt": "/ingriddorioschulze.github.io/static/js/2.d877e9bb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f96f3bec.js",
-    "static/js/2.43f9556c.chunk.js",
-    "static/js/main.ef880edc.chunk.js"
+    "static/js/runtime-main.53c6a09b.js",
+    "static/js/2.d877e9bb.chunk.js",
+    "static/js/main.3afc4cbd.chunk.js"
   ]
 }
