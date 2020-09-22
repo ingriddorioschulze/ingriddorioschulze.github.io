@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/ingriddorioschulze.github.io/static/js/main.3afc4cbd.chunk.js",
-    "main.js.map": "/ingriddorioschulze.github.io/static/js/main.3afc4cbd.chunk.js.map",
+    "main.js": "/ingriddorioschulze.github.io/static/js/main.1d4f1e66.chunk.js",
+    "main.js.map": "/ingriddorioschulze.github.io/static/js/main.1d4f1e66.chunk.js.map",
     "runtime-main.js": "/ingriddorioschulze.github.io/static/js/runtime-main.53c6a09b.js",
     "runtime-main.js.map": "/ingriddorioschulze.github.io/static/js/runtime-main.53c6a09b.js.map",
     "static/js/2.d877e9bb.chunk.js": "/ingriddorioschulze.github.io/static/js/2.d877e9bb.chunk.js",
     "static/js/2.d877e9bb.chunk.js.map": "/ingriddorioschulze.github.io/static/js/2.d877e9bb.chunk.js.map",
     "index.html": "/ingriddorioschulze.github.io/index.html",
-    "precache-manifest.e26310319934397b77309bbdf3bdddf1.js": "/ingriddorioschulze.github.io/precache-manifest.e26310319934397b77309bbdf3bdddf1.js",
+    "precache-manifest.182746a49ed77abac160e5e275085ee1.js": "/ingriddorioschulze.github.io/precache-manifest.182746a49ed77abac160e5e275085ee1.js",
     "service-worker.js": "/ingriddorioschulze.github.io/service-worker.js",
     "static/js/2.d877e9bb.chunk.js.LICENSE.txt": "/ingriddorioschulze.github.io/static/js/2.d877e9bb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.53c6a09b.js",
     "static/js/2.d877e9bb.chunk.js",
-    "static/js/main.3afc4cbd.chunk.js"
+    "static/js/main.1d4f1e66.chunk.js"
   ]
 }

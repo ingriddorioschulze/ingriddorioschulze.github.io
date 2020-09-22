@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "37589dfb26c61302cb35a97a518271ce",
+    "revision": "6f56975b175fdcbc8c2c87c22b6e1ad7",
     "url": "/ingriddorioschulze.github.io/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ingriddorioschulze.github.io/static/js/2.d877e9bb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8ca4cb01af984baa2066",
-    "url": "/ingriddorioschulze.github.io/static/js/main.3afc4cbd.chunk.js"
+    "revision": "d5c3895cd524b659082a",
+    "url": "/ingriddorioschulze.github.io/static/js/main.1d4f1e66.chunk.js"
   },
   {
     "revision": "82e9407fbaf53d0d8c46",
