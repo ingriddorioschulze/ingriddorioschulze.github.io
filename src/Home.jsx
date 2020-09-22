@@ -1,36 +1,42 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Container = styled.div`
+//#region styles
+const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  width: 100%;
 
-  .title {
+  .name {
     font-family: 'Montserrat';
-    font-weight: ${({ theme }) => theme.font.weight.bold};
-    font-size: ${({ theme }) => theme.font.size.xl};
-    padding: 40px;
+    font-weight: ${({ theme }) => theme.font.weight.medium};
+    font-size: 60px;
+    padding: 10px;
     color: ${({ theme }) => theme.colors.onyx};
+    text-align: center;
   }
 
-  .text {
+  .subtitle {
+    padding: 10px;
     font-family: 'Montserrat';
     font-weight: ${({ theme }) => theme.font.weight.normal};
     font-size: ${({ theme }) => theme.font.size.xs};
-    text-align: center;
     color: ${({ theme }) => theme.colors.onyx};
-    margin: 5px;
+    line-height: 30px;
+    text-align: center;
   }
-  .text1 {
+
+  .description {
     font-family: 'Montserrat';
-    font-weight: ${({ theme }) => theme.font.weight.semiBold};
-    font-size: ${({ theme }) => theme.font.size.xs};
-    text-align: center;
+    font-weight: ${({ theme }) => theme.font.weight.normal};
+    font-size: ${({ theme }) => theme.font.size.xxs};
     color: ${({ theme }) => theme.colors.onyx};
-    padding: 20px;
+    line-height: 30px;
+    text-align: center;
+    width: 340px;
   }
 
   .contact-icons {
@@ -58,30 +64,28 @@ const Container = styled.div`
     }
   }
 `
+//#endregion
 
-function Contact() {
+function Home() {
   return (
-    <Container>
-      <div className="title">Contact</div>
-      <div className="text1">In case you want:</div>
-      <div className="text">1. to say "Hey, what is going on?",</div>
-      <div className="text">2. to give me plants,</div>
-      <div className="text">3. to make a project together,</div>
-      <div className="text1">you are in the correct place!</div>
+    <HomeContainer>
+      <div className="name">Ing·rid</div>
+      <div className="subtitle">[ˈɪŋɡrit]</div>
+      <div className="subtitle">a name, from Old Norse: Ingvi</div>
+      <div className="description">
+        <div>1. Paulista based in Berlin; 2. Frontend Engineer;</div>
+        <div>3. Can do some Design things;</div>
+        <div>4. Brings people together; 5. Photogenic;</div>
+        <div>6. Mother of plants; 7. Popcorn lover; </div>
+        <div>8. Craftswoman.</div>
+      </div>
       <div className="contact-icons">
         <a
-          href="mailto:ingriddorio@gmail.com?subject=Olá"
+          href="mailto:ingriddorio@gmail.com?subject=Olá! Hello! Hallo!"
           target="_blank"
           rel="noopener noreferrer"
         >
           <i className="fa fa-envelope"></i>
-        </a>
-        <a
-          href="https://twitter.com/dorioschulze"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fa fa-twitter"></i>
         </a>
         <a
           href="https://linkedin.com/in/ingriddorioschulze/"
@@ -98,8 +102,8 @@ function Contact() {
           <i className="fa fa-github"></i>
         </a>
       </div>
-    </Container>
+    </HomeContainer>
   )
 }
 
-export default Contact
+export default Home

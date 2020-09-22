@@ -3,9 +3,10 @@ import { ThemeProvider } from 'styled-components'
 import styled from 'styled-components'
 
 import Navbar from './NavBar'
-import Content from '../components/Content'
-import GlobalStyles from '../GlobalStyles'
-import theme from '../theme'
+import Home from './Home'
+
+import GlobalStyles from './GlobalStyles'
+import theme from './theme'
 
 const AppContainer = styled.div`
   display: flex;
@@ -19,7 +20,7 @@ function App() {
       <GlobalStyles />
       <AppContainer>
         <Navbar />
-        <Content />
+        <Home />
       </AppContainer>
     </ThemeProvider>
   )
