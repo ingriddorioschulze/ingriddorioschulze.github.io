@@ -1,6 +1,6 @@
 # My Personal Website
 
-I went for a basic, minimalist and colourful design to show some projects on my personal website.
+I went for a basic and minimalist design show my contact and links to my projects.
 
 #
 
